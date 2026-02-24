@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chef David CH | Culinary Architect</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root { --gold: #D4AF37; --black: #000000; --white: #FFFFFF; --dark-bg: #0a0a0a; }
+        body { background-color: var(--black); color: var(--white); font-family: 'Montserrat', sans-serif; -webkit-font-smoothing: antialiased; }
+        h1, h2, h3, h4, .serif { font-family: 'Playfair Display', serif; }
+        .text-gold { color: var(--gold) !important; }
+        .text-white { color: var(--white) !important; }
+
+        /* HERO SANS IMAGE : Fond luxe sombre dégradé */
+        .hero {
+            height: 80vh;
+            background: radial-gradient(circle at center, #1a1a1a 0%, #000000 100%);
+            display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
+            border-bottom: 1px solid #222;
+        }
+        .hero-title { font-size: clamp(3.5rem, 8vw, 6rem); letter-spacing: 10px; text-transform: uppercase; margin-bottom: 0; font-weight: 700; }
+        .hero-subtitle { color: var(--gold); letter-spacing: 5px; text-transform: uppercase; font-size: 1.3rem; margin-top: 15px; font-weight: 400; }
+
+        .section-padding { padding: 100px 0; }
+        .bg-darker { background-color: var(--dark-bg); }
+        
+        .vision-box p { font-size: 1.35rem; line-height: 2; font-weight: 300; color: var(--white); text-align: justify; }
+        
+        .heritage-block { border-left: 3px solid var(--gold); padding-left: 25px; margin-bottom: 40px; }
+        .heritage-block p { font-size: 1.15rem; line-height: 1.8; color: var(--white); font-weight: 300; }
+
+        /* Conteneur des photos avec bordure or */
+        .img-container { border: 1px solid var(--gold); padding: 8px; background: var(--black); transition: transform 0.4s ease; }
+        .img-container:hover { transform: scale(1.03); }
+
+        .btn-gold {
+            background: transparent; color: var(--gold); border: 2px solid var(--gold);
+            padding: 20px 50px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase;
+            text-decoration: none; transition: all 0.3s ease; display: inline-block; font-size: 1.1rem;
+        }
+        .btn-gold:hover { background: var(--gold); color: var(--black); }
+        
+        .dish-title { font-size: 1.5rem; margin-top: 20px; margin-bottom: 5px; }
+        .dish-desc { font-weight: 300; color: #ccc; font-size: 0.95rem; }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h1 class="hero-title text-white">David CH</h1>
+        <p class="hero-subtitle">Executive Chef & Systems Architect</p>
+    </header>
+
+    <section class="section-padding container">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <h2 class="text-center mb-5 text-gold" style="font-size: 3rem; letter-spacing: 3px;">THE MINDSET</h2>
+                <div class="vision-box">
+                    <p>“True mastery is rooted in humility. At 36, I approach every kitchen as a student of the craft—honored to learn from everyone, regardless of rank, and proud to share 20 years of heritage from the masters. My commitment is built on respect, adaptability, and a benevolent mindset to bring value to the entire team.”</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-darker">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 mb-5 mb-md-0 text-center">
+                    <div class="img-container">
+                        <img src="static/michel_roth.jpg" class="img-fluid w-100" alt="Chef David & Chef Michel Roth">
+                    </div>
+                    <p class="mt-3 text-gold small text-uppercase tracking-wide">With Chef Michel Roth (MOF)</p>
+                </div>
+                <div class="col-md-7 ps-md-5">
+                    <h2 class="mb-5 text-gold" style="font-size: 2.5rem; letter-spacing: 2px;">THE HERITAGE</h2>
+                    
+                    <div class="heritage-block">
+                        <h3 class="text-white mb-3">Haute Cuisine Foundations</h3>
+                        <p>Ritz Escoffier School & Relais & Châteaux. Trained under the strict guidance of Michel Roth (MOF) and Thierry Marx. Mastering the absolute fundamentals of French high gastronomy.</p>
+                    </div>
+                    
+                    <div class="heritage-block">
+                        <h3 class="text-white mb-3">Executive Leadership</h3>
+                        <p>Managing international brigades, including a Japanese Master Sushi Chef. Structuring high-volume resort operations and declining a Michelin Star to prioritize authentic, sustainable team management.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding container">
+        <h2 class="text-center mb-5 text-gold" style="font-size: 3rem; letter-spacing: 3px;">SIGNATURE CREATIONS</h2>
+        
+        <div class="row g-4 align-items-start">
+            
+            <div class="col-md-4 text-center">
+                <div class="img-container mb-3">
+                    <img src="static/poisson.jpg" class="img-fluid w-100" alt="Gastronomic Fish">
+                </div>
+                <h4 class="text-white serif dish-title">Ocean Symphony</h4>
+                <p class="dish-desc">Precision and pure flavors.</p>
+            </div>
+            
+            <div class="col-md-4 text-center">
+                <div class="img-container mb-3">
+                    <img src="static/pyramide.jpg" class="img-fluid w-100" alt="The Golden Pyramid">
+                </div>
+                <h4 class="text-white serif dish-title">The Golden Pyramid</h4>
+                <p class="dish-desc">Triple chocolate & gold dust.</p>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <div class="img-container mb-3">
+                    <img src="static/risotto.jpg" class="img-fluid w-100" alt="Signature Risotto">
+                </div>
+                <h4 class="text-white serif dish-title">Earthy Risotto</h4>
+                <p class="dish-desc">Authentic heritage and texture.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section-padding text-center" style="border-top: 1px solid #333;">
+        <div class="container">
+            <h2 class="mb-4 text-white" style="font-size: 3.5rem;">BEYOND THE PLATE</h2>
+            <p class="mb-5 mx-auto" style="color: #fff; font-size: 1.2rem; font-weight: 300; max-width: 600px;">
+                I don't just manage kitchens; I architect their success. Access <strong>iTable26</strong>, my custom-coded digital ecosystem.
+            </p>
+            <a href="https://davidhightable.pythonanywhere.com/login" class="btn-gold">
+                <i class="bi bi-shield-lock me-2"></i> Enter The Cockpit
+            </a>
+        </div>
+    </section>
+
+    <footer class="py-5 text-center bg-darker" style="border-top: 1px solid #333;">
+        <p class="m-0 text-white" style="font-weight: 300; letter-spacing: 2px;">© 2026 DAVID CH | EXECUTIVE CHEF</p>
+    </footer>
+
+</body>
+</html>
